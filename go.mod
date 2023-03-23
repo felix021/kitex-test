@@ -3,15 +3,16 @@ module github.com/felix021/kitex-test
 go 1.19
 
 require (
-	github.com/apache/thrift v0.18.1
+	github.com/apache/thrift v0.13.0
+	github.com/cloudwego/fastpb v0.0.4
 	github.com/cloudwego/kitex v0.5.1
+	google.golang.org/protobuf v1.28.1
 )
 
 require (
 	github.com/bytedance/gopkg v0.0.0-20220817015305-b879a72dc90f // indirect
 	github.com/chenzhuoyu/iasm v0.0.0-20230222070914-0b1b64b0e762 // indirect
 	github.com/choleraehyq/pid v0.0.16 // indirect
-	github.com/cloudwego/fastpb v0.0.4 // indirect
 	github.com/cloudwego/frugal v0.1.6 // indirect
 	github.com/cloudwego/netpoll v0.3.2 // indirect
 	github.com/cloudwego/thriftgo v0.2.8 // indirect
@@ -31,8 +32,7 @@ require (
 	golang.org/x/sys v0.0.0-20220817070843-5a390386f1f2 // indirect
 	golang.org/x/text v0.6.0 // indirect
 	google.golang.org/genproto v0.0.0-20210513213006-bf773b8c8384 // indirect
-	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/apache/thrift => github.com/apache/thrift v0.13.0
+//replace github.com/cloudwego/kitex v0.5.1 => github.com/felix021/kitex v0.4.5-0.20230323081241-b744ff5c08c8

@@ -2,15 +2,15 @@ package main
 
 import (
 	"context"
-	test "github.com/felix021/kitex-test/kitex_gen/kitex/felix021/test"
+	pbapi "github.com/felix021/kitex-test/kitex_gen/pbapi"
 )
 
-// TestServiceImpl implements the last service interface defined in the IDL.
-type TestServiceImpl struct{}
+// EchoImpl implements the last service interface defined in the IDL.
+type EchoImpl struct{}
 
-// Echo implements the TestServiceImpl interface.
-func (s *TestServiceImpl) Echo(ctx context.Context, req *test.EchoRequest) (resp *test.EchoResponse, err error) {
-	resp = &test.EchoResponse{
+// Echo implements the EchoImpl interface.
+func (s *EchoImpl) Echo(ctx context.Context, req *pbapi.Request) (resp *pbapi.Response, err error) {
+	resp = &pbapi.Response{
 		Message: req.Message,
 	}
 	return

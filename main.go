@@ -1,12 +1,14 @@
 package main
 
 import (
-	test "github.com/felix021/kitex-test/kitex_gen/kitex/felix021/test/testservice"
+	pbapi "github.com/felix021/kitex-test/kitex_gen/pbapi/echo"
 	"log"
 )
 
 func main() {
-	svr := test.NewServer(new(TestServiceImpl))
+	svr := pbapi.NewServer(
+		new(EchoImpl),
+	)
 
 	err := svr.Run()
 
