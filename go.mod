@@ -35,4 +35,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-//replace github.com/cloudwego/kitex v0.5.1 => github.com/felix021/kitex v0.4.5-0.20230323081241-b744ff5c08c8
+replace github.com/cloudwego/kitex v0.5.1 => github.com/felix021/kitex v0.4.5-0.20230323081241-b744ff5c08c8
