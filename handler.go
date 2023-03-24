@@ -2,15 +2,15 @@ package main
 
 import (
 	"context"
-	test "github.com/felix021/kitex-test/kitex_gen/kitex/felix021/test"
+	echo "github.com/felix021/kitex-test/kitex_gen/echo"
 )
 
-// TestServiceImpl implements the last service interface defined in the IDL.
-type TestServiceImpl struct{}
+// EchoServiceImpl implements the last service interface defined in the IDL.
+type EchoServiceImpl struct{}
 
-// Echo implements the TestServiceImpl interface.
-func (s *TestServiceImpl) Echo(ctx context.Context, req *test.EchoRequest) (resp *test.EchoResponse, err error) {
-	resp = &test.EchoResponse{
+// Echo implements the EchoServiceImpl interface.
+func (s *EchoServiceImpl) Echo(ctx context.Context, req *echo.EchoRequest) (resp *echo.EchoResponse, err error) {
+	resp = &echo.EchoResponse{
 		Message: req.Message,
 	}
 	return

@@ -6,17 +6,17 @@ import (
 	"time"
 
 	"github.com/cloudwego/kitex/client"
-	"github.com/felix021/kitex-test/kitex_gen/kitex/felix021/test"
-	"github.com/felix021/kitex-test/kitex_gen/kitex/felix021/test/testservice"
+	"github.com/felix021/kitex-test/kitex_gen/echo"
+	"github.com/felix021/kitex-test/kitex_gen/echo/echoservice"
 )
 
 func main() {
-	cli, err := testservice.NewClient("hello", client.WithHostPorts("0.0.0.0:8888"))
+	cli, err := echoservice.NewClient("serverName", client.WithHostPorts("127.0.0.1:8888"))
 	if err != nil {
 		log.Fatal(err)
 	}
 	for {
-		req := &test.EchoRequest{Message: "hello world"}
+		req := &echo.EchoRequest{Message: "hello world"}
 		resp, err := cli.Echo(context.Background(), req)
 		if err != nil {
 			log.Fatal(err)

@@ -3,7 +3,7 @@ module github.com/felix021/kitex-test
 go 1.19
 
 require (
-	github.com/apache/thrift v0.18.1
+	github.com/apache/thrift v0.13.0
 	github.com/cloudwego/kitex v0.5.1
 )
 

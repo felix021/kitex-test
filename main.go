@@ -1,12 +1,12 @@
 package main
 
 import (
-	test "github.com/felix021/kitex-test/kitex_gen/kitex/felix021/test/testservice"
+	echo "github.com/felix021/kitex-test/kitex_gen/echo/echoservice"
 	"log"
 )
 
 func main() {
-	svr := test.NewServer(new(TestServiceImpl))
+	svr := echo.NewServer(new(EchoServiceImpl))
 
 	err := svr.Run()
 
