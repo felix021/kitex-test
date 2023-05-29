@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	echo "github.com/felix021/kitex-test/kitex_gen/echo"
+	"time"
 )
 
 // EchoServiceImpl implements the last service interface defined in the IDL.
@@ -13,5 +14,6 @@ func (s *EchoServiceImpl) Echo(ctx context.Context, req *echo.EchoRequest) (resp
 	resp = &echo.EchoResponse{
 		Message: req.Message,
 	}
+	time.Sleep(time.Millisecond * 500)
 	return
 }

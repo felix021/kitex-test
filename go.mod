@@ -35,4 +35,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/apache/thrift => github.com/apache/thrift v0.13.0
+replace github.com/cloudwego/kitex v0.5.1 => github.com/felix021/kitex v0.4.5-0.20230324093804-6e3b82933a34
